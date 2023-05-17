@@ -62,10 +62,11 @@ def main(features=features, targets=targets, iterations=1000):
     # Set basic variables and vectorize basic lambda functions for vectors
     calc = np.vectorize(lambda x, y: (x - y) ** 2)
     sig = np.vectorize(lambda x: 1 / (1 + math.exp(-x)))
-    np.random.seed(13)
+    np.random.seed(42)
     weights = np.random.rand(2).reshape(2, 1)
     #weights = np.array([1,1]).reshape(2,1)
     bias = np.random.rand()
+    bias *=.5
     lr = 0.1
     eps = 0.01
 
