@@ -1,3 +1,10 @@
+'''
+NOTES:
+I was trying to see how close and how quickly my results converged on the correct 
+answer to get the actual correct binary output you would have to do easy transformation of results where:
+x < .5 then 0
+x >+ .5 then 1
+'''
 import math
 import numpy as np
 
